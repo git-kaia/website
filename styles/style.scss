@@ -1,0 +1,141 @@
+@use "colors";
+:root {
+    font-size: 1em;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skip-to-main-content {
+    position: absolute;
+    top: -400px;
+
+    .skip-to-main-content:focus {
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+main {
+    padding: 5% 7% 5% 7%;
+
+    > * {
+        margin: 0 auto;
+    }
+}
+
+p {
+    margin: 2% 0 1% 0;
+}
+
+h1,
+h2 {
+    margin: 2% 0 1% 0;
+}
+
+figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+    background-color: colors.$mainBlue;
+
+    .active-page {
+        background-color: white;
+        color: colors.$darkBlue;
+
+        a {
+            color: colors.$darkBlue;
+        }
+    }
+
+    li {
+        padding: 2%;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+}
+        li:hover {
+            background-color: colors.$salmon;
+        }
+    
+}
+
+
+.sub-articles {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    height: 40%;
+
+    .content-box__image {
+        height: 40%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+div {
+    padding: 5%;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+table {
+        border-collapse: collapse;
+        
+        th {
+            background-color: colors.$mainBlue;
+            color: white;
+        }
+
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: colors.$lightGray;
+        }
+    }
+
+.form {
+    width: 70%;
+    background-color: rgba($color: rgb(0 153 208), $alpha: 0.5);
+    box-shadow: 1em 2em 3em 2em grey;
+
+    input {
+        background-color: colors.$lightGray;
+        padding: 0.3%;
+        margin-top: 3%;
+    }
+}

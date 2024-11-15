@@ -1,0 +1,127 @@
+:root {
+  font-size: 1em;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.skip-to-main-content {
+  position: absolute;
+  top: -400px;
+}
+.skip-to-main-content .skip-to-main-content:focus {
+  position: static;
+  margin: 0 auto;
+}
+
+main {
+  padding: 5% 7% 5% 7%;
+}
+main > * {
+  margin: 0 auto;
+}
+
+p {
+  margin: 2% 0 1% 0;
+}
+
+h1,
+h2 {
+  margin: 2% 0 1% 0;
+}
+
+figure {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+figure img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0%;
+  background-color: #1464AE;
+}
+.nav-bar .active-page {
+  background-color: white;
+  color: #212899;
+}
+.nav-bar .active-page a {
+  color: #212899;
+}
+.nav-bar li {
+  padding: 2%;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.nav-bar li:hover {
+  background-color: #fd6041;
+}
+
+.sub-articles {
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+  height: 40%;
+}
+.sub-articles .content-box__image {
+  height: 40%;
+  margin: 0 auto;
+}
+.sub-articles img {
+  width: 100%;
+}
+
+div {
+  padding: 5%;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+table th {
+  background-color: #1464AE;
+  color: white;
+}
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.form {
+  width: 70%;
+  background-color: rgba(0, 153, 208, 0.5);
+  box-shadow: 1em 2em 3em 2em grey;
+}
+.form input {
+  background-color: #f2f2f2;
+  padding: 0.3%;
+  margin-top: 3%;
+}/*# sourceMappingURL=style.css.map */
