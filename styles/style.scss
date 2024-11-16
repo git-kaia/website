@@ -1,4 +1,5 @@
 @use "colors";
+
 :root {
     font-size: 1em;
 }
@@ -8,35 +9,47 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.skip-to-main-content {
-    position: absolute;
-    top: -400px;
-
-    .skip-to-main-content:focus {
-        position: static;
-        margin: 0 auto;
-    }
+:focus {
+    outline: 3px solid colors.$salmon;
+    outline-offset: 2px;
 }
+
+ .skip-to-main-content {
+        position: absolute;
+        transform: translateY(-400%);
+        background-color: black;
+        color: white;
+        font-size: 1.5em;
+        padding: 1%;
+
+        &:focus {
+            transform: translateY(0%);
+            position: absolute;
+            top: 1vh;
+            left: 1%;
+            z-index: 1;
+        }
+    }
 
 main {
     padding: 5% 7% 5% 7%;
 
-    > * {
+    >* {
         margin: 0 auto;
     }
 }
 
 p {
-    margin: 2% 0 1% 0;
+    margin: 3% 0 2% 0;
+    max-width: 70ch;
 }
 
 h1,
 h2 {
-    margin: 2% 0 1% 0;
+    margin: 3% 0 2% 0;
 }
 
 figure {
-    width: 100%;
     padding: 0;
     margin: 0;
     border: 0;
@@ -46,6 +59,7 @@ figure {
         margin: 0;
         padding: 0;
         border: 0;
+        display: block;
     }
 }
 
@@ -68,7 +82,8 @@ figure {
     }
 
     li {
-        padding: 2%;
+        padding: 1.5%;
+
         a {
             text-decoration: none;
             color: white;
@@ -76,11 +91,12 @@ figure {
             font-weight: bold;
             letter-spacing: 0.1em;
         }
-}
-        li:hover {
-            background-color: colors.$salmon;
-        }
-    
+    }
+
+    li:hover {
+        background-color: colors.$salmon;
+    }
+
 }
 
 
@@ -91,11 +107,13 @@ figure {
     height: 40%;
 
     .content-box__image {
-        height: 40%;
+        height: 50%;
         margin: 0 auto;
-    }
-    img {
-        width: 100%;
+        display: block;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -106,27 +124,27 @@ div {
 .table {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
 }
 
 table {
-        border-collapse: collapse;
-        
-        th {
-            background-color: colors.$mainBlue;
-            color: white;
-        }
+    border-collapse: collapse;
 
-        td,
-        th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: colors.$lightGray;
-        }
+    th {
+        background-color: colors.$mainBlue;
+        color: white;
     }
+
+    td,
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: colors.$lightGray;
+    }
+}
 
 .form {
     width: 70%;
@@ -137,5 +155,9 @@ table {
         background-color: colors.$lightGray;
         padding: 0.3%;
         margin-top: 3%;
+    }
+
+    p {
+        margin-top: 2em;
     }
 }

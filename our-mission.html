@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our mission</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <a class="skip-to-main-content" href="#main-content" aria-label="Primary">Skip to main content</a>
+    <header>
+      <figure class="header-img">
+        <img src="assets/header3.svg" alt="" />
+      </figure>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="/index.html">Home</a></li>
+          <li class="active-page">
+            <a href="/our-mission.html">Our mission</a>
+          </li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/visit-us.html">Visit us</a></li>
+          <li><a href="/contac-us.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="0" role="main">
+      <div class="table">
+        <h1>Internet for everyone</h1>
+        <h2>Share of population aged 16-79 - Internet use</h2>
+        <table>
+          <tr>
+            <th></th>
+            <th>2018</th>
+            <th>2020</th>
+            <th>2022</th>
+            <th>2024</th>
+          </tr>
+          <tr>
+            <td>Use of Internet last 3 months</td>
+            <td>96</td>
+            <td>97</td>
+            <td>99</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>Used the internet for e-mail</td>
+            <td>93</td>
+            <td>92</td>
+            <td>95</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <td>Bought/ordered films/music</td>
+            <td>41</td>
+            <td>53</td>
+            <td>63</td>
+            <td>62</td>
+          </tr>
+          <caption>
+            Source:
+            <a
+              href="https://www.ssb.no/en/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/statistikk/bruk-av-ikt-i-husholdningene"
+              >SSB</a
+            >
+          </caption>
+        </table>
+      </div>
 
-<body>
+      <div class="form" tabindex="0">
+        <h1 class="form__h1">Tell us what you struggle with online</h1>
 
-    <body>
-        <a class="skip-to-main-content" href="#main-content">Skip to main content</a>
-        <header>
-            <figure class="header-img"><img src="assets/header3.svg" alt=""></figure>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="/index.html">Home</a></li>
-                    <li class="active-page"><a href="/our-mission.html">Our mission</a></li>
-                    <li><a href="/gallery.html">Gallery</a></li>
-                    <li><a href="/visit-us.html">Visit us</a></li>
-                    <li><a href="/contac-us.html">Contact us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="table">
-                <h1>Internet for everyone</h1>
-                <h2>Share of population aged 16-79 - Internet use</h2>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th>2018</th>
-                        <th>2020</th>
-                        <th>2022</th>
-                        <th>2024</th>
-                    </tr>
-                    <tr>
-                        <td>Use of Internet last 3 months</td>
-                        <td>96</td>
-                        <td>97</td>
-                        <td>99</td>
-                        <td>99</td>
-                    </tr>
-                    <tr>
-                        <td>Used the internet for e-mail</td>
-                        <td>93</td>
-                        <td>92</td>
-                        <td>95</td>
-                        <td>96</td>
-                    </tr>
-                    <tr>
-                        <td>Bought/ordered films/music</td>
-                        <td>41</td>
-                        <td>53</td>
-                        <td>63</td>
-                        <td>62</td>
-                    </tr>
-                    <caption>Source: <a
-                            href="https://www.ssb.no/en/teknologi-og-innovasjon/informasjons-og-kommunikasjonsteknologi-ikt/statistikk/bruk-av-ikt-i-husholdningene">SSB</a>
-                    </caption>
-                </table>
-            </div>
+        <h2 class="form__h2">
+          As our mission to improve accessibility across the web we'd like your
+          feedback!
+        </h2> 
 
-            <div class="form">
-
-                <h1 class="form__h1">Tell us what you struggle with online</h1>
-
-                <h2 class="form__h2">As our mission to improve accessibility across the web we'd like your feedback!
-                </h2>
-
-                <form action="" class="form__form">
-                    <label for="fname">First name</label>
-                    <input type="text" id="fname">
-                    <label for="lname">Last name</label>
-                    <input type="text" id="lname">
-                    <p>What affects your online experience?</p>
-                    <label for="low-vision">Low vision</label>
-                    <input type="checkbox" id="low-vision">
-                    <label for="color-blindness">Color blindness</label>
-                    <input type="checkbox" id="color-blindness">
-                    <label for="mobility-issues">Mobility issues</label>
-                    <input type="checkbox" id="mobility-issues">
-                    <label for="other">Other</label>
-                    <input type="checkbox" id="other"><br>
-                    <label for="question2">Tell us in your own words</label>
-                    <input type="text" id="question2"><br>
-                    <label for="email">Provide your e-mail adress</label>
-                    <input type="text" id="email"><br>
-                    <label for="password">Create a password</label>
-                    <input type="text">
-                    <input type="submit">
-                </form>
-
-            </div>
-        </main>
-    </body>
-
+        <form action="" class="form__form">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" />
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" />
+          <p>What affects your online experience?</p>
+          <label for="low-vision">Low vision</label>
+          <input type="checkbox" id="low-vision" />
+          <label for="color-blindness">Color blindness</label>
+          <input type="checkbox" id="color-blindness" />
+          <label for="mobility-issues">Mobility issues</label>
+          <input type="checkbox" id="mobility-issues" />
+          <label for="other">Other</label>
+          <input type="checkbox" id="other" /><br />
+          <label for="question2">Tell us in your own words</label>
+          <input type="text" id="question2" /><br />
+          <label for="email">Provide your e-mail adress</label>
+          <input type="text" id="email" /><br />
+          <label for="Phonenumber">Provide your phone number</label>
+          <input type="text" />
+          <input type="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
