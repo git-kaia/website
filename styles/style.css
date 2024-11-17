@@ -9,8 +9,8 @@ body {
 }
 
 :focus {
-  outline: 3px solid #fd6041;
-  outline-offset: 2px;
+  outline: 4px solid #fd6041;
+  outline-offset: 4px;
 }
 
 .skip-to-main-content {
