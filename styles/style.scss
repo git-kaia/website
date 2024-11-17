@@ -172,6 +172,7 @@ section {
     h2 {
         margin: 1.5em 0;
         font-weight: lighter;
+        font-size: 1.3em;
     }
 
     label {
@@ -208,11 +209,6 @@ section {
         &:active {
             background-color: salmon;
         }
-    }
-
-    p {
-        margin-top: 2.5em;
-        font-size: 1.1em;
     }
 }
 

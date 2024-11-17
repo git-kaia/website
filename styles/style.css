@@ -152,6 +152,7 @@ section .sub-articles__image {
 .feedback-form h2 {
   margin: 1.5em 0;
   font-weight: lighter;
+  font-size: 1.3em;
 }
 .feedback-form label {
   font-size: 1.1em;
@@ -182,10 +183,6 @@ section .sub-articles__image {
 }
 .feedback-form input[type=submit i]:active {
   background-color: salmon;
-}
-.feedback-form p {
-  margin-top: 2.5em;
-  font-size: 1.1em;
 }
 
 footer {
