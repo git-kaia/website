@@ -80,7 +80,10 @@ header .nav-bar .active-page {
   color: #212899;
 }
 header .nav-bar .active-page a {
-  color: #212899;
+  color: #1464AE;
+}
+header .nav-bar .active-page:hover a {
+  color: white;
 }
 header .nav-bar li {
   padding: 1.5%;
@@ -94,6 +97,7 @@ header .nav-bar li a {
 }
 header .nav-bar li:hover {
   background-color: #fd6041;
+  color: white;
 }
 
 section {
@@ -189,4 +193,5 @@ footer {
   background-color: #1464AE;
   color: white;
   padding: 2%;
+  font-size: 1.7em;
 }/*# sourceMappingURL=style.css.map */

@@ -83,7 +83,13 @@ header {
             color: colors.$darkBlue;
 
             a {
-                color: colors.$darkBlue;
+                color: colors.$mainBlue;
+            }
+
+            &:hover {
+                a {
+                    color: white;
+                }
             }
         }
 
@@ -101,6 +107,7 @@ header {
 
         li:hover {
             background-color: colors.$salmon;
+            color: white;
         }
     }
 }
@@ -176,7 +183,7 @@ section {
         background-color: colors.$lightGray;
         margin: 2%;
         height: 2em;
-        
+
         &:hover {
             border: solid 4px colors.$salmon;
         }
@@ -214,4 +221,5 @@ footer {
     background-color: colors.$mainBlue;
     color: white;
     padding: 2%;
+    font-size: 1.7em;
 }
