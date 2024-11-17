@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my virtual home </title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my virtual home</title>
+    <link rel="stylesheet" href="/styles/style.css" />
 </head>
 
 <body>
     <a class="skip-to-main-content" href="#main-content" aria-label="Skip to main content">Skip to main content</a>
-    <header role="banner">
-        <figure><img src="assets/header3.svg" alt=""></figure>
+    <header>
+        <figure><img src="assets/header3.svg" alt=""/></figure>
         <nav aria-label="Primary">
             <ul class="nav-bar">
                 <li class="active-page"><a href="/index.html">Home</a></li>
                 <li><a href="/our-mission.html">Our mission</a></li>
                 <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="/visit-us.html">Visit us</a></li>
-                <li><a href="/contac-us.html">Contact us</a></li>
+                <li><a href="/contact-us.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -28,52 +28,67 @@
 
         <h2>An accessible website</h2>
 
-        <p>I believe that all websites should be fully accessible to everyone, and this website is created in the honour
-            of accessibility across the web.</p>
+        <p>
+            I believe that all websites should be fully accessible to everyone, and
+            this website is created in the honour of accessibility across the web.
+        </p>
 
         <figure tabindex="0">
             <img src="assets/pexels-photo-6981103.jpeg"
-                alt="A blind man sits in front of a computer with a headset reading braille.">
-            <figcaption>Source: <a href="https://creativecommons.org/">Creative Commons</a></figcaption>
+                alt="A blind man sits in front of a computer with a headset reading braille." />
+            <figcaption>
+                Source: <a href="https://creativecommons.org/">Creative Commons</a>
+            </figcaption>
         </figure>
-
-        <div class="sub-articles">
-            <div tabindex="0">
-                <figure class="content-box__image">
-                    <img src="assets/universal-access-svgrepo-com.svg" alt="">
-                </figure>
-                <h2>Universal access</h2>
-                <p>Universal access refers to all people having equal opportunity and access to a service or product
-                    from which they can benefit, regardless of their social class, ethnicity, background or physical
-                    disabilities. It is a vision, and is some cases a legal term, that spans many fields, including
-                    education, disability, telecommunications, and healthcare. It is tied strongly to the concept of
-                    human rights.</p>
-            </div>
-
-            <div tabindex="0">
-                <figure class="content-box__image">
-                    <img src="assets/ai-platform-svgrepo-com.svg" alt="">
-                </figure>
-                <h2>AI accessibility</h2>
-                <p>Artifical intelligence plays a huge part in accessibility. AI is used in language caption,
-                    translations, voice assistance (e.g. screen reader), image recognition, facial recognition,
-                    summarizing information, lip reading, user navigation (AI navigation systems can aid with real time
-                    guidance for people with mobility issues) and regression testing (AI can assist in automating and
-                    testing systems for developers to ensure it is accessible).</p>
-            </div>
-
-            <div tabindex="0">
-                <figure class="content-box__image">
-                    <img src="assets/tree-svgrepo-com.svg" alt="">
-                </figure>
-                <h2>Sustainability</h2>
-                <p>This website tries to be sustainable with it's design.</p>
-                <h3>How??</h3>
-                <p>Using SVG images that take up less space than PNG and JPG. And by keeping a simple design and a dark
-                    background (that needs less energy to display).</p>
+    </main>
+    <section>
+        <div class="sub-articles" tabindex="0">
+            <img class="sub-articles__image" src="assets/universal-access.svg" alt="" />
+            <div class="sub-articles__text">
+                <h2>Universal Access</h2>
+                <p>
+                    Universal access refers to all people having equal opportunity and
+                    access to a service or product from which they can benefit,
+                    regardless of their social class, ethnicity, background or physical
+                    disabilities. It is a vision, and is some cases a legal term, that
+                    spans many fields, including education, disability,
+                    telecommunications, and healthcare. It is tied strongly to the
+                    concept of human rights.
+                </p>
             </div>
         </div>
-    </main>
+        <div class="sub-articles" tabindex="0">
+            <!-- <figure > -->
+            <img class="sub-articles__image" src="assets/ai-platform-svgrepo-com.svg" alt="" />
+            <!-- </figure> -->
+            <div class="sub-articles__text">
+                <h2>AI accessibility</h2>
+                <p>
+                    Artificial intelligence plays a huge part in accessibility. AI is
+                    used in language caption, translations, voice assistance (e.g.
+                    screen reader), image recognition, facial recognition, summarizing
+                    information, lip reading, user navigation (AI navigation systems can
+                    aid with real time guidance for people with mobility issues) and
+                    regression testing (AI can assist in automating and testing systems
+                    for developers to ensure it is accessible).
+                </p>
+            </div>
+        </div>
+        <div class="sub-articles" tabindex="0">
+            <!-- <figure > -->
+            <img class="sub-articles__image" src="assets/tree-svgrepo-com.svg" alt="" />
+            <!-- </figure> -->
+            <div class="sub-articles__text">
+                <h2>Sustainability</h2>
+                <p>This website tries to be sustainable with its design.</p>
+                <h3>How?</h3>
+                <p>Using SVG images that take up less space than PNG and JPG.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
 </body>
 
 </html>

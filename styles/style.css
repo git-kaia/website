@@ -1,5 +1,6 @@
 :root {
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 body {
@@ -38,6 +39,7 @@ main > * {
 p {
   margin: 3% 0 2% 0;
   max-width: 70ch;
+  line-height: 1.5em;
 }
 
 h1,
@@ -45,20 +47,26 @@ h2 {
   margin: 3% 0 2% 0;
 }
 
-figure {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-figure img {
-  width: 100%;
+img {
+  max-width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
   display: block;
 }
 
-.nav-bar {
+header {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+header figure {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+header .nav-bar {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -67,78 +75,118 @@ figure img {
   padding: 0%;
   background-color: #1464AE;
 }
-.nav-bar .active-page {
+header .nav-bar .active-page {
   background-color: white;
   color: #212899;
 }
-.nav-bar .active-page a {
+header .nav-bar .active-page a {
   color: #212899;
 }
-.nav-bar li {
+header .nav-bar li {
   padding: 1.5%;
 }
-.nav-bar li a {
+header .nav-bar li a {
   text-decoration: none;
   color: white;
   font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
-.nav-bar li:hover {
+header .nav-bar li:hover {
   background-color: #fd6041;
 }
 
-.sub-articles {
-  display: flex;
-  align-items: top;
-  justify-content: space-around;
-  height: 40%;
-}
-.sub-articles .content-box__image {
-  height: 50%;
-  margin: 0 auto;
-  display: block;
-}
-.sub-articles .content-box__image img {
-  width: 100%;
-}
-
-div {
+section {
   padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vw;
+}
+section .sub-articles {
+  display: grid;
+  grid-template-rows: 30% auto;
+  gap: 1vh;
+  grid-template-areas: "figure" "text";
+}
+section .sub-articles__image {
+  grid-area: figure;
+  justify-self: center;
+  height: 90%;
 }
 
-.table {
+.mission {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-table {
+.mission table {
   border-collapse: collapse;
+  width: 60%;
 }
-table th {
+.mission table th {
   background-color: #1464AE;
   color: white;
 }
-table td,
-table th {
+.mission table td,
+.mission table th {
   border: 1px solid #ddd;
   padding: 8px;
 }
-table tr:nth-child(even) {
+.mission table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.form {
+.feedback-form {
   width: 70%;
   background-color: rgba(0, 153, 208, 0.5);
   box-shadow: 1em 2em 3em 2em grey;
+  padding: 5%;
+  margin-top: 10%;
 }
-.form input {
+.feedback-form h1 {
+  margin: 2em 0;
+}
+.feedback-form h2 {
+  margin: 1.5em 0;
+  font-weight: lighter;
+}
+.feedback-form label {
+  font-size: 1.1em;
+}
+.feedback-form input {
   background-color: #f2f2f2;
-  padding: 0.3%;
-  margin-top: 3%;
+  margin: 2%;
+  height: 2em;
 }
-.form p {
-  margin-top: 2em;
+.feedback-form input:hover {
+  border: solid 4px #fd6041;
+}
+.feedback-form input[type=checkbox i] {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+.feedback-form input[type=submit i] {
+  height: 3.5em;
+  width: 7.5em;
+  font-size: 1.5em;
+  display: block;
+  margin: auto;
+}
+.feedback-form input[type=submit i]:hover {
+  background-color: #fd6041;
+  color: white;
+}
+.feedback-form input[type=submit i]:active {
+  background-color: salmon;
+}
+.feedback-form p {
+  margin-top: 2.5em;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #1464AE;
+  color: white;
+  padding: 2%;
 }/*# sourceMappingURL=style.css.map */
